@@ -120,6 +120,19 @@
     .about-sakura-right {
         transform: scaleX(-1);
     }
+
+    .project-card {
+        background: color-mix(in srgb, var(--color-background) 72%, var(--color-surface) 28%);
+        border: 1px solid color-mix(in srgb, var(--color-brand-pink) 18%, var(--color-border));
+        box-shadow: 0 18px 45px rgb(0 0 0 / 18%);
+        transition: border-color 300ms ease, box-shadow 300ms ease, transform 300ms ease;
+    }
+
+    .project-card:hover {
+        border-color: color-mix(in srgb, var(--color-brand-pink) 60%, var(--color-border));
+        box-shadow: 0 20px 55px color-mix(in srgb, var(--color-brand-magenta) 20%, transparent);
+        transform: translateY(-4px);
+    }
 }
 
 
@@ -178,11 +191,11 @@
 
     @keyframes marquee {
         0% {
-            transform: translateX(0);
+            transform: translate3d(0, 0, 0);
         }
 
         100% {
-            transform: translateX(-50%);
+            transform: translate3d(-50%, 0, 0);
         }
     }
 
@@ -195,7 +208,9 @@
     }
 
     .animate-marquee {
-        animation: marquee 30s linear infinite;
+        width: max-content;
+        animation: marquee 50s linear infinite;
+        will-change: transform;
     }
 
     @keyframes about-glow {

@@ -52,7 +52,7 @@ export const About = () => {
 
                     {/* Transparent decoration with a silhouette-following glow */}
                     <div className="flex justify-center animate-fade-in animation-delay-200">
-                        <img src="/chinesedeco.png" alt="" aria-hidden="true" className="about-decoration w-full max-w-[25rem] object-contain" />
+                        <img src="/chinesedeco.png" alt="" aria-hidden="true" className="about-decoration w-full max-w-[15rem] sm:max-w-[19rem] lg:max-w-[25rem] object-contain" />
                     </div>
 
                     {/* Highlights */}

@@ -133,6 +133,36 @@
         box-shadow: 0 20px 55px color-mix(in srgb, var(--color-brand-magenta) 20%, transparent);
         transform: translateY(-4px);
     }
+
+    .contact-sakura {
+        filter:
+            drop-shadow(0 0 2px var(--color-brand-pink)) drop-shadow(0 0 9px var(--color-brand-pink)) drop-shadow(0 0 24px var(--color-brand-magenta));
+        animation: about-glow 3s ease-in-out infinite alternate;
+    }
+
+    .footer-sakura {
+        filter: drop-shadow(0 0 7px var(--color-brand-pink));
+    }
+
+    .contact-field {
+        background-color: var(--color-surface);
+        color: var(--color-foreground);
+        caret-color: var(--color-brand-pink);
+        color-scheme: dark;
+    }
+
+    .contact-field::placeholder {
+        color: var(--color-text-muted);
+    }
+
+    .contact-field:-webkit-autofill,
+    .contact-field:-webkit-autofill:hover,
+    .contact-field:-webkit-autofill:focus {
+        -webkit-text-fill-color: var(--color-foreground);
+        box-shadow: 0 0 0 1000px var(--color-surface) inset;
+        caret-color: var(--color-brand-pink);
+        transition: background-color 9999s ease-in-out 0s;
+    }
 }
 
 

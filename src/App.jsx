@@ -1,5 +1,6 @@
 import { Hero } from "@/sections/Hero"
 import { Navbar } from "@/layout/Navbar"
+import { Footer } from "@/layout/Footer"
 import { About } from "@/sections/About"
 import { Projects } from "@/sections/Projects"
 import { Experience } from "@/sections/Experience"
@@ -30,8 +31,8 @@ function App() {
         <Projects />
         <Experience />
         <Contact />
-
       </main>
+      <Footer />
     </div>
   );
 }

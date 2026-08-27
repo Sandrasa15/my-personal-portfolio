@@ -66,23 +66,25 @@ export const Hero = () => {
                         <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
                             <span className="text-sm text-muted-foreground">Follow me:</span>
                             {[
-                                { icon: FaGithub, href: '#', label: 'GitHub' },
+                                { icon: FaGithub, href: 'https://github.com/Sandrasa15', label: 'GitHub' },
                                 { icon: FaLinkedin, href: '#', label: 'LinkedIn' },
                             ].map((social, idx) => (
                                 <a
                                     key={idx}
                                     href={social.href}
+                                    target={social.href.startsWith('http') ? '_blank' : undefined}
+                                    rel={social.href.startsWith('http') ? 'noreferrer' : undefined}
                                     aria-label={social.label}
                                     className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300"
                                 >
-                                    <social.icon className="w-5 h-5" />
+                                    <social.icon className="w-5 h-5 text-surface" />
                                 </a>
                             ))}
                         </div>
                     </div>
 
                     <div className="flex justify-center lg:justify-end animate-fade-in animation-delay-300">
-                        <div className="w-full max-w-[14rem] sm:max-w-[18rem] lg:max-w-md">
+                        <div className="w-full max-w-56 sm:max-w-72 lg:max-w-md">
                             <img
                                 src="/heropic.png"
                                 alt="Sandra"

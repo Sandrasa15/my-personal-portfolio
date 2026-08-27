@@ -1,16 +1,78 @@
-# React + Vite
+# Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive personal portfolio website showcasing my projects, skills, and contact information.
 
-Currently, two official plugins are available:
+## 🌐 Live Website
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+[View my portfolio](https://my-personal-portfolio-henna-six.vercel.app/)
 
-## React Compiler
+## 📌 About the Project
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This portfolio was created to introduce myself, showcase some of my projects, and provide an easy way for people to get in touch with me.
 
-## Expanding the ESLint configuration
+The website includes:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* 🏠 **Home** — Introduction and overview
+* 👩‍💻 **About Me** — A short introduction and my technical background
+* 🚀 **Featured Projects** — A selection of projects I've worked on
+* 📩 **Contact Me** — Ways to get in touch with me
+
+## 🛠️ Technologies Used
+
+* React
+* Tailwind CSS
+* Git & GitHub
+* Vercel
+
+## ✨ Features
+
+* Responsive design
+* Clean and modern UI
+* Smooth navigation between sections
+* Project showcase
+* Contact section
+* Mobile-friendly layout
+* Automatically deployed with Vercel through GitHub
+
+## 🚀 Getting Started
+
+To run the project locally:
+
+```bash
+# Clone the repository
+git clone YOUR_GITHUB_REPOSITORY_URL
+
+# Navigate to the project
+cd YOUR_PROJECT_FOLDER
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+```
+
+Then open the local development URL shown in your terminal.
+
+## 📂 Project Structure
+
+```text
+portfolio/
+├── public/
+├── src/
+│   ├── components/
+│   ├── ...
+├── package.json
+└── README.md
+```
+
+## 📸 Preview
+<img width="1516" height="727" alt="image" src="https://github.com/user-attachments/assets/040c4a6b-c66d-4813-b786-347980f48e0c" />
+
+
+## 📬 Contact
+
+If you'd like to get in touch with me, you can contact me through the contact section of my portfolio.
+
+---
+

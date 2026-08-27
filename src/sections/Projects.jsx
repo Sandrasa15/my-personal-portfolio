@@ -27,7 +27,9 @@ const projects = [
         title: "Task Manager",
         description:
             "A responsive task management application with task creation, editing, completion tracking, filtering, and local data persistence.",
-        image: "/projects/taskmanagerpic.png",
+        image: "/projects/taskmanagerpic.webp",
+        width: 1200,
+        height: 567,
         tags: ["React", "JavaScript", "CSS"],
         link: "https://task-manager-react-me-b1b0.vercel.app/",
         github: "https://github.com/Sandrasa15/Task-Manager-react",
@@ -36,7 +38,9 @@ const projects = [
         title: "E-Commerce Website",
         description:
             "A simple e-commerce website built to practice React, focusing on reusable components, dynamic content, and interactive user interfaces.",
-        image: "/projects/ecommerceweb.png",
+        image: "/projects/ecommerceweb.webp",
+        width: 1200,
+        height: 581,
         tags: ["React", "JavaScript", "CSS"],
         link: "https://ecommerce-react-practice.vercel.app/",
         github: "https://github.com/Sandrasa15/ecommerce-react-practice",
@@ -45,7 +49,9 @@ const projects = [
         title: "Personal Portfolio",
         description:
             "My personal portfolio showcasing my projects, skills, and experience while exploring modern web development technologies.",
-        image: "/projects/portfoliopic.png",
+        image: "/projects/portfoliopic.webp",
+        width: 1200,
+        height: 574,
         tags: ["React", "Tailwind CSS"],
         link: "#",
         github: "https://github.com/Sandrasa15/my-personal-portfolio.git",
@@ -54,7 +60,9 @@ const projects = [
         title: "Warehouse Robot Controller",
         description:
             "An AI-based multi-agent pathfinding system for coordinating warehouse robots while avoiding collisions and conflicts.",
-        image: "/projects/aip.png",
+        image: "/projects/aip.webp",
+        width: 1200,
+        height: 573,
         tags: ["Python", "Artificial Intelligence", "Algorithms", "MAPF"],
         link: "#",
         github: "https://github.com/Salsabil-charif/Warehouse-Robot-Controller",
@@ -64,26 +72,26 @@ const projects = [
 
 export const Projects = () => {
 
-    return <section className="relative overflow-hidden py-20 md:py-24" id="projects">
+    return <section className="relative overflow-hidden py-16 md:py-20" id="projects">
 
         {/* Bg glows */}
         <div className="absolute top-1/4 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
         <div className="absolute bottom-1/4 left-0 w-64 h-64 bg-highlight/5 rounded-full blur-3xl" />
 
-        <div className="container relative z-10 mx-auto px-6">
+        <div className="container relative z-10 mx-auto max-w-6xl px-5 sm:px-6">
             {/*Section header */}
-            <div className="mx-auto mb-16 max-w-3xl text-center">
+            <div className="mx-auto mb-10 max-w-3xl text-center md:mb-12">
                 <span className="text-3xl font-bold uppercase text-brand-pink animate-fade-in">Featured Projects</span>
                 <p className="my-4 text-text-muted animate-fade-in animation-delay-200">A selection of projects showcasing what I&apos;ve learned, built, and explored through code.</p>
             </div>
 
             {/*Projects grid */}
-            <div className="grid gap-6 md:gap-8 md:grid-cols-2">
+            <div className="grid gap-5 md:gap-6 md:grid-cols-2">
                 {projects.map((project, idx) => (
                     <article key={project.title} className="project-card group mx-auto w-full max-w-80 overflow-hidden rounded-xl animate-fade-in md:max-w-none md:rounded-2xl" style={{ animationDelay: `${(idx + 1) * 100}ms` }}>
                         {/*Image */}
                         <div className="relative overflow-hidden aspect-video">
-                            <img src={project.image} alt={project.title} className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                            <img src={project.image} alt={project.title} width={project.width} height={project.height} loading="lazy" decoding="async" className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
 
                             {/*Overlay Links */}
                             <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">

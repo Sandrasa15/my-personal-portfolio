@@ -7,9 +7,13 @@ export const Footer = () => {
         <footer className="relative z-10 border-t border-brand-pink/20 py-8">
             <div className="container mx-auto flex flex-col items-center justify-center gap-3 px-6 text-center">
                 <img
-                    src="/sakura.png"
+                    src="/sakura.webp"
                     alt=""
                     aria-hidden="true"
+                    width="192"
+                    height="192"
+                    loading="lazy"
+                    decoding="async"
                     className="footer-sakura h-8 w-8 object-contain opacity-90"
                 />
                 <a

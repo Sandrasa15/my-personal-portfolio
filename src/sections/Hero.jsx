@@ -38,21 +38,21 @@ const skills = [
 export const Hero = () => {
     return (
         <section className="relative min-h-screen flex items-center overflow-hidden">
-            <div className="container mx-auto px-6 pt-32 pb-20 relative z-10">
-                <div className="grid lg:grid-cols-2 gap-12 items-center">
-                    <div className="space-y-8">
+            <div className="container mx-auto max-w-6xl px-5 pt-24 pb-14 relative z-10 sm:px-6 lg:pt-28 lg:pb-16">
+                <div className="grid items-center gap-8 lg:grid-cols-2 lg:gap-10">
+                    <div className="space-y-6">
                         <div className="animate-fade-in">
                             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-brand-magenta opacity-90 mb-6">
                                 <span className="w-2 h-2 bg-brand-pink rounded-full animate-pulse" />
                                 ENSIA student - Frontend developer
                             </span>
-                            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight animate-fade-in animation-delay-100">
+                            <h1 className="text-3xl md:text-4xl lg:text-[2.65rem] font-bold leading-tight animate-fade-in animation-delay-100">
                                 <span className="font-black uppercase glow-text">Hi, I am Sandra</span>{' '}<br />
                                 <span className="text-brand-pink font-serif italic font-normal">
                                     I build, learn, and create with technology.
                                 </span>
                             </h1>
-                            <p className="text-lg text-text-muted max-w-lg pt-6 animate-fade-in animation-delay-200">
+                            <p className="max-w-lg pt-5 text-base leading-relaxed text-text-muted animate-fade-in animation-delay-200 lg:text-lg">
                                 I&apos;m an Artificial Intelligence student passionate about software development and AI. I enjoy turning ideas into practical projects, exploring new technologies, and continuously learning to become a better developer.
                             </p>
                         </div>
@@ -84,10 +84,15 @@ export const Hero = () => {
                     </div>
 
                     <div className="flex justify-center lg:justify-end animate-fade-in animation-delay-300">
-                        <div className="w-full max-w-56 sm:max-w-72 lg:max-w-md">
+                        <div className="w-full max-w-52 sm:max-w-64 lg:max-w-80">
                             <img
-                                src="/heropic.png"
+                                src="/heropic.webp"
                                 alt="Sandra"
+                                width="640"
+                                height="853"
+                                loading="eager"
+                                fetchPriority="high"
+                                decoding="async"
                                 className="hero-character w-full aspect-4/5 object-contain object-bottom"
                             />
                         </div>
@@ -95,8 +100,8 @@ export const Hero = () => {
                 </div>
 
                 {/*Skills section */}
-                <div className='mt-20 animate-fade-in animation-delay-600'>
-                    <div className='mb-7 flex items-center justify-center gap-4'>
+                <div className='mt-14 animate-fade-in animation-delay-600 lg:mt-16'>
+                    <div className='mb-5 flex items-center justify-center gap-3'>
                         <span className='h-px w-12 bg-brand-pink/60' aria-hidden='true' />
                         <h2 className='text-xl font-bold uppercase tracking-[0.16em] text-brand-pink drop-shadow-[0_0_12px_rgba(255,45,131,0.45)] sm:text-2xl'>Technologies I work with</h2>
                         <span className='h-px w-12 bg-brand-pink/60' aria-hidden='true' />

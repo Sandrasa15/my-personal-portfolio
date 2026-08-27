@@ -10,11 +10,11 @@ const navLinks = [
 
 export const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-    
+
 
     return (
         <header className="fixed inset-x-0 top-0 z-50 px-4 py-5 sm:px-6 lg:py-7">
-            <nav className="mx-auto flex max-w-6xl items-center justify-between rounded-full bg-brand-blush px-5 py-2 text-background shadow-lg shadow-brand-pink/10 md:px-6">
+            <nav className="mx-auto flex max-w-5xl items-center justify-between rounded-full bg-brand-blush px-4 py-2 text-background shadow-lg shadow-brand-pink/10 md:px-5">
                 <a
                     href="#"
                     className="text-lg font-black uppercase tracking-[0.18em] text-brand-magenta transition-colors hover:text-brand-pink sm:text-xl"
@@ -54,7 +54,7 @@ export const Navbar = () => {
                             <a
                                 href={link.href}
                                 key={link.href}
-                                
+
                                 className="rounded-xl px-4 py-3 text-sm font-bold uppercase tracking-wide text-foreground transition-colors hover:bg-brand-pink hover:text-foreground"
                                 onClick={() => setIsMobileMenuOpen(false)}
                             >

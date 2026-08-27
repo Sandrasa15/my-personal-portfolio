@@ -33,15 +33,15 @@ const highlights = [
 export const About = () => {
 
     return (
-        <section className="relative overflow-hidden py-20 md:py-24" id="about">
-            <div className="container relative z-10 mx-auto px-6">
-                <div className="grid items-center gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(20rem,1.25fr)_minmax(0,0.85fr)] lg:gap-8">
+        <section className="relative overflow-hidden py-16 md:py-20" id="about">
+            <div className="container relative z-10 mx-auto max-w-6xl px-5 sm:px-6">
+                <div className="grid items-center gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(18rem,1.15fr)_minmax(0,0.8fr)] lg:gap-6">
                     {/* About copy */}
                     <div className="space-y-8 animate-fade-in">
                         <div className="flex items-center gap-2 sm:gap-3">
-                            <img src="/sakura.png" alt="" aria-hidden="true" className="about-sakura h-14 w-14 shrink-0 object-contain object-right sm:h-16 sm:w-16" />
+                            <img src="/sakura.webp" alt="" aria-hidden="true" width="192" height="192" loading="lazy" decoding="async" className="about-sakura h-14 w-14 shrink-0 object-contain object-right sm:h-16 sm:w-16" />
                             <span className="text-2xl font-bold uppercase tracking-[0.12em] text-brand-pink sm:text-3xl lg:text-4xl">About Me</span>
-                            <img src="/sakura.png" alt="" aria-hidden="true" className="about-sakura about-sakura-right h-14 w-14 shrink-0 object-contain object-left sm:h-16 sm:w-16" />
+                            <img src="/sakura.webp" alt="" aria-hidden="true" width="192" height="192" loading="lazy" decoding="async" className="about-sakura about-sakura-right h-14 w-14 shrink-0 object-contain object-left sm:h-16 sm:w-16" />
                         </div>
                         <h2 className="text-3xl font-bold leading-tight text-foreground md:text-4xl">Always curious. Always building.</h2>
                         <p className="max-w-xl text-lg leading-relaxed text-text-muted">
@@ -52,7 +52,7 @@ export const About = () => {
 
                     {/* Transparent decoration with a silhouette-following glow */}
                     <div className="flex justify-center animate-fade-in animation-delay-200">
-                        <img src="/chinesedeco.png" alt="" aria-hidden="true" className="about-decoration w-full max-w-[15rem] sm:max-w-[19rem] lg:max-w-[25rem] object-contain" />
+                        <img src="/chinesedeco.webp" alt="" aria-hidden="true" width="640" height="640" loading="lazy" decoding="async" className="about-decoration w-full max-w-60 sm:max-w-76 lg:max-w-100 object-contain" />
                     </div>
 
                     {/* Highlights */}

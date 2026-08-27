@@ -73,11 +73,11 @@ export const Contact = () => {
     };
 
     return (
-        <section id="contact" className="relative overflow-hidden py-24 md:py-32">
-            <div className="container relative z-10 mx-auto px-6">
-                <div className="mx-auto mb-12 max-w-3xl text-center md:mb-16">
+        <section id="contact" className="relative overflow-hidden py-16 md:py-20">
+            <div className="container relative z-10 mx-auto max-w-6xl px-4 sm:px-6">
+                <div className="mx-auto mb-8 max-w-3xl text-center md:mb-10">
                     <span className="text-sm font-medium uppercase tracking-[0.2em] text-brand-pink animate-fade-in">Get In Touch</span>
-                    <h2 className="mt-4 mb-6 text-4xl font-bold text-foreground animate-fade-in animation-delay-100 md:text-5xl">
+                    <h2 className="mt-3 mb-5 text-3xl font-bold text-foreground animate-fade-in animation-delay-100 sm:text-4xl lg:text-5xl">
                         Let&apos;s build <span className="font-serif font-normal italic text-brand-pink">something great.</span>
                     </h2>
                     <p className="text-text-muted animate-fade-in animation-delay-200">
@@ -85,8 +85,8 @@ export const Contact = () => {
                     </p>
                 </div>
 
-                <div className="mx-auto grid max-w-5xl items-start gap-10 lg:grid-cols-2 lg:gap-14">
-                    <div className="rounded-3xl border border-brand-pink/30 bg-background p-5 animate-fade-in animation-delay-300 sm:p-8">
+                <div className="mx-auto grid max-w-2xl items-start gap-8 lg:max-w-5xl lg:grid-cols-2 lg:gap-12">
+                    <div className="rounded-3xl border border-brand-pink/30 bg-background p-4 animate-fade-in animation-delay-300 sm:p-6 lg:p-8">
                         <form className="space-y-5" onSubmit={handleSubmit}>
                             <div>
                                 <label htmlFor="name" className="mb-2 block text-sm font-medium">Name</label>
@@ -113,7 +113,7 @@ export const Contact = () => {
                     </div>
 
                     <div className="flex items-center justify-center animate-fade-in animation-delay-400">
-                        <img src="/sakuras.png" alt="" aria-hidden="true" className="contact-sakura w-full max-w-40 object-contain sm:max-w-56 lg:max-w-72" />
+                        <img src="/sakuras.webp" alt="" aria-hidden="true" width="448" height="781" loading="lazy" decoding="async" className="contact-sakura w-full max-w-40 object-contain sm:max-w-48 lg:max-w-56" />
                     </div>
 
                     <div className="col-span-full mx-auto w-full max-w-4xl rounded-3xl border border-brand-pink/20 bg-surface/80 p-5 shadow-lg shadow-brand-magenta/10 backdrop-blur-md animate-fade-in animation-delay-500 sm:p-8">

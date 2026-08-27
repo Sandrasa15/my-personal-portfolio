@@ -66,10 +66,13 @@ portfolio/
 └── README.md
 ```
 
+## 📸 Preview
+<img width="1516" height="727" alt="image" src="https://github.com/user-attachments/assets/040c4a6b-c66d-4813-b786-347980f48e0c" />
+
+
 ## 📬 Contact
 
 If you'd like to get in touch with me, you can contact me through the contact section of my portfolio.
 
 ---
 
-Made with ❤️ using React and Tailwind CSS.
